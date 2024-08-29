@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/gradients.png);
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+    overflow: hidden;
+}
+
+.logo {
+    width: 120px;
+    padding: 20px 0;
+    cursor: pointer;
+    z-index: 3;
+    position: relative;
+    opacity: 1;
+}
+
+#uploadedImageContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
+
+#uploadedImageContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.launch-time {
+    display: flex;
+    justify-content: center;
+}
+
+.launch-time div {
+    flex-basis: 100px;
+}
+
+.launch-time div p {
+    font-size: 60px;
+}
+
+/* Hidden menu styling */
+.hidden-menu {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(145deg, #ffffff, #f0f0f0); 
+    padding: 30px;
+    border-radius: 16px; 
+    display: none;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+    width: 320px;
+}
+
+.hidden-menu label {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    display: block;
+    color: #444; 
+}
+
+.hidden-menu input[type="text"],
+.hidden-menu input[type="datetime-local"],
+.hidden-menu input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #f9f9f9; 
+}
+
+.hidden-menu input[type="text"]:focus,
+.hidden-menu input[type="datetime-local"]:focus,
+.hidden-menu input[type="file"]:focus {
+    outline: none;
+    border-color: #4CAF50; 
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.2); 
+}
+
+.hidden-menu button {
+    padding: 10px 20px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.hidden-menu button:hover {
+    transform: translateY(-2px); 
+}
+
+.hidden-menu button:first-of-type {
+    background-color: #4CAF50; 
+    color: white;
+}
+
+.hidden-menu button:first-of-type:hover {
+    background-color: #45a049;
+}
+
+.hidden-menu button:last-of-type {
+    background-color: #f44336; 
+    color: white;
+}
+
+.hidden-menu button:last-of-type:hover {
+    background-color: #da190b;
+}

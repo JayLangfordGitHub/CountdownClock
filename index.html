@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sanofi Countdown Page</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <img src="images/sanofi.png" class="logo" id="logo">
+        <div class="content">
+            <p id="countdownText">Countdown</p>
+            <h1 id="mainText">Launching Soon</h1>
+            <div class="launch-time">
+                <div>
+                    <p id="days">00</p>
+                    <span>Days</span>
+                </div>
+                <div>
+                    <p id="hours">00</p>
+                    <span>Hours</span>
+                </div>
+                <div>
+                    <p id="minutes">00</p>
+                    <span>Minutes</span>
+                </div>
+                <div>
+                    <p id="seconds">00</p>
+                    <span>Seconds</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hidden menu  -->
+    <div id="menu" class="hidden-menu">
+        <label for="countdownInput">Countdown Text: </label>
+        <input type="text" id="countdownInput" placeholder="Enter Countdown Text">
+        <br><br>
+        <label for="mainTextInput">Main Text: </label>
+        <input type="text" id="mainTextInput" placeholder="Enter Main Text">
+        <br><br>
+        <label for="datetime">Select Date & Time: </label>
+        <input type="datetime-local" id="datetime">
+        <br><br>
+        <label for="imageUpload">Upload an Image: </label>
+        <input type="file" id="imageUpload" accept="image/*">
+        <br><br>
+        <button onclick="startCountdown()">Start Countdown</button>
+        <button onclick="closeMenu()">Close</button>
+    </div>
+
+    <!-- Image container -->
+    <div id="uploadedImageContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -29,7 +29,7 @@ To access the secret menu:
 ### Secret Menu
 ![image](https://github.com/user-attachments/assets/37e8b949-75c8-495b-93b9-73be01b3b392)
 
-### Customized Countdown
+### Customised Countdown
 ![image](https://github.com/user-attachments/assets/fe2d33d3-ccb7-43f8-b853-bcb2103d34bd)
 
 ## Technologies Used
